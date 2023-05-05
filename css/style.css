@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+input[type="search"] {
+  width: 25vw;
+}
+
 .main-container {
   min-height: 100vh;
 
@@ -17,7 +21,7 @@
 .sidebar {
   border: solid 2px lightskyblue;
 
-  padding: 10%;
+  padding: 2rem;
 
   grid-area: sidebar;
 
@@ -34,8 +38,26 @@
 
 .header {
   border: solid 2px lightgreen;
+
+  padding: 2rem;
   
   grid-area: header;
+
+  display: grid;
+  gap: 20px;
+}
+
+.upper-header,
+.lower-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10vw;
+}
+
+.lower-header .profile-info {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 1rem;
 }
 
 .main-content {
