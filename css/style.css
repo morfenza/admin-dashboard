@@ -2,12 +2,8 @@
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-}
-
 .main-container {
-  min-height: 100%;
+  min-height: 100vh;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -21,7 +17,19 @@ html, body {
 .sidebar {
   border: solid 2px lightskyblue;
 
+  padding: 10%;
+
   grid-area: sidebar;
+
+  display: grid;
+  grid-template-rows: repeat(3, min-content) auto;
+  gap: 50px;
+  align-items: center;
+}
+
+.sidebar ul {
+  display: grid;
+  gap: 15px;
 }
 
 .header {
