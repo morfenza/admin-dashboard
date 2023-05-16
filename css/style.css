@@ -106,6 +106,13 @@ input[type="search"] {
   border: 1px solid blueviolet;
   
   grid-area: trend;
+
+  display: grid;
+}
+
+.trend-cards {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
 }
 
 .upper-header,
