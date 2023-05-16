@@ -6,6 +6,23 @@ input[type="search"] {
   width: 25vw;
 }
 
+.header {
+  border: solid 2px lightgreen;
+
+  padding: 2rem;
+  
+  grid-area: header;
+
+  display: grid;
+  gap: 20px;
+}
+
+.lower-header .profile-info {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 1rem;
+}
+
 .main-container {
   min-height: 100vh;
 
@@ -16,6 +33,12 @@ input[type="search"] {
     "sidebar header header header"
     "sidebar main main main"
   ;
+}
+
+.main-content {
+  border: solid 2px lightsalmon;
+  
+  grid-area: main;
 }
 
 .sidebar {
@@ -36,32 +59,9 @@ input[type="search"] {
   gap: 15px;
 }
 
-.header {
-  border: solid 2px lightgreen;
-
-  padding: 2rem;
-  
-  grid-area: header;
-
-  display: grid;
-  gap: 20px;
-}
-
 .upper-header,
 .lower-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10vw;
-}
-
-.lower-header .profile-info {
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  gap: 1rem;
-}
-
-.main-content {
-  border: solid 2px lightsalmon;
-  
-  grid-area: main;
 }
