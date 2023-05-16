@@ -33,6 +33,23 @@ input[type="search"] {
   border: 1px solid black;
 
   grid-area: project;
+
+  padding: 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  place-items: center;
+}
+
+.project-card {
+  border: 1px solid burlywood;
+
+  width: 90%;
+  height: 90%;
+
+  
 }
 
 .main-container {
@@ -56,10 +73,12 @@ input[type="search"] {
 
   display: grid;
   grid-template-columns: 2fr 1fr;
+  gap: 20px;
   grid-template-areas: 
     "project announ"
     "project trend"
   ;
+
 }
 
 .sidebar {
